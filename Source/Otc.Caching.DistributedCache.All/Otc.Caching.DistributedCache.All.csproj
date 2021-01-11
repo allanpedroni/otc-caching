@@ -11,8 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.2" />
     <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.1.2" />
-    https://docs.microsoft.com/en-us/dotnet/core/compatibility/3.0#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package
-    <!--<PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="2.1.2" />-->
+    <!--https://docs.microsoft.com/en-us/dotnet/core/compatibility/3.0#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package-->
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="2.1.2" />
+    <!--
+      Microsoft.Data.SqlClient
+Microsoft.Extensions.Caching.SqlServer
+    -->
   </ItemGroup>
 
   <ItemGroup>
