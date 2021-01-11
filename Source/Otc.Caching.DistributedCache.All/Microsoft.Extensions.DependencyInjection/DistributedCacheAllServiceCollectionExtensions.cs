@@ -1,4 +1,4 @@
-﻿using Otc.Caching.DistributedCache.All;
+using Otc.Caching.DistributedCache.All;
 using System;
 
 namespace Microsoft.Extensions.DependencyInjection

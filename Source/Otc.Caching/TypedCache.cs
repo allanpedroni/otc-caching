@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using Otc.Caching.Abstractions;
 using System;
 using System.Threading.Tasks;
