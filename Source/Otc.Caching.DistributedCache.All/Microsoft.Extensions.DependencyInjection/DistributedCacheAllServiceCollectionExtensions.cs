@@ -1,5 +1,5 @@
-using Otc.Caching.DistributedCache.All;
 using System;
+using Otc.Caching.DistributedCache.All;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -45,7 +45,7 @@ namespace Microsoft.Extensions.DependencyInjection
             return services;
         }
 
-        private static void AddDistributedSqlServerCache(IServiceCollection services, 
+        private static void AddDistributedSqlServerCache(IServiceCollection services,
             DistributedCacheConfiguration distributedCacheConfiguration)
         {
             if (string.IsNullOrEmpty(distributedCacheConfiguration.CacheSqlConnectionString))
@@ -94,7 +94,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     $"is required for 'StorageType.Redis'.");
             }
 
-            services.AddDistributedRedisCache(options =>
+            services.AddStackExchangeRedisCache(options =>
             {
                 options.Configuration = distributedCacheConfiguration.CacheRedisConfiguration;
                 options.InstanceName = distributedCacheConfiguration.CacheRedisInstanceName;

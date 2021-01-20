@@ -1,11 +1,12 @@
-﻿using Otc.Caching;
+using Otc.Caching;
 using Otc.Caching.Abstractions;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class OtcCachingServiceCollectionExtensions
     {
-        public static IServiceCollection AddOtcCaching(this IServiceCollection services, CacheConfiguration cacheConfiguration = null)
+        public static IServiceCollection AddOtcCaching(this IServiceCollection services,
+            CacheConfiguration cacheConfiguration = null)
         {
             if (services == null)
             {
