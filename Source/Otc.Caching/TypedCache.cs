@@ -146,9 +146,14 @@ namespace Otc.Caching
 
                     try
                     {
-                        value = await funcAsync();
+                        value = await GetAsync<T>(key);
 
-                        await SetAsync(key, value, absoluteExpirationRelativeToNow);
+                        if (value == null)
+                        {
+                            value = await funcAsync();
+
+                            await SetAsync(key, value, absoluteExpirationRelativeToNow);
+                        }
                     }
                     finally
                     {

@@ -39,9 +39,9 @@ namespace Otc.Caching.Tests
         {
             var resultExpectedFromCache = await typedCache.GetAsync("success",
                 TimeSpan.FromSeconds(30), async () => new User()
-                {
-                    Id = 1,
-                    Name = "Success test"
+            {
+                            Id = 1,
+                            Name = "Success test"
                 });
 
             resultExpectedFromCache = await typedCache.GetAsync<User>("success",
