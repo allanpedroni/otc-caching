@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Caching", "Otc.Caching\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Caching.DistributedCache.All", "Otc.Caching.DistributedCache.All\Otc.Caching.DistributedCache.All.csproj", "{8B6A8446-3A6C-4889-9B68-474FB2601FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otc.Caching.Tests", "Otc.Caching.Tests\Otc.Caching.Tests.csproj", "{18C3FFB9-D9F9-41B2-94FD-8AD9A9DB7AB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Caching.Tests", "Otc.Caching.Tests\Otc.Caching.Tests.csproj", "{18C3FFB9-D9F9-41B2-94FD-8AD9A9DB7AB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6B9CFF8-12A5-46A6-A104-CBD61645B0CA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
